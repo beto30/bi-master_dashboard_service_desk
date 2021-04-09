@@ -33,6 +33,14 @@ dos incidentes, além de uma série de outros indicadores para auxílio no supor
 Nesse trabalho serão utilizados o MySQL, como data source dos dados oriundos do Sistema de Gestão de Serviços OTRS, SQL PowerArchitect para construção do modelo multidimensional,
 PostgreSQL, como banco de dados para armazenamento do datawarehouse e stage area, Pentaho Data Integrator para desenvolvimento do ETL e PowerBI na elaboração dos Dashboards.
 
+Estrutura dos arquivos:
+
+- Pentaho Data Integrator: ETL
+- Power BI: Dashboard
+- Relatório: Arquivo PDF contendo a descrição do projeto
+- SQL Power Architect: Modelo multidimensional
+- Scripts SQL: Scripts para criação das tabelas do banco de dados.
+
 ---
 
 Matrícula: 191.477.023 

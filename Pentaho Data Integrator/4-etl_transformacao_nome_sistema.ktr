@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>etl_transformacao_nome_sistema</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2021/01/06 15:43:08.552</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2021/01/06 15:43:08.552</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>PostgreSQL</name>
+    <server>localhost</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>postgres</database>
+    <port>5432</port>
+    <username>postgres</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79fd208dc2fc8a</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Atualiza Nome Sistema Ticket</from>
+      <to>Atualiza Ticket sem Atendente</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Atualiza Ticket sem Atendente</from>
+      <to>Anonimiza Atendente</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Atualiza Nome Sistema Ticket</name>
+    <type>ExecSQL</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PostgreSQL</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>-- Atualiza o nome do sistema de acordo com o id do serviço
+
+-- 664-666: Almoxarifado
+-- 760, 779, 780, 1310: Dados
+-- 761: Banco de Dados
+-- 763, 795-799 : Comunicacao Eletronica
+-- 764, 800-803: Sistema Operacional
+-- 765: Pastas e Arquivos
+-- 766: Servidor
+-- 767: Equipamento
+-- 768: Impressao e Digitalizacao
+-- 769, 826: Celular
+-- 770, 827: Videoconferencia
+-- 771, 828-831: Rede
+-- 772: Certificado Digital
+-- 773: Seguranca
+-- 781-788: Banco de Dados
+-- 762,789-792: Software
+-- 794: Correio Eletrônico
+-- 804-807: Pasta e Arquivos
+-- 808-813: Servidor
+-- 814-820: Equipamento
+-- 821-825: Impressão e Digitalização
+-- 832-834: Certificado Digital
+-- 835-837: Segurança
+-- 840: Acesso
+-- 858-884: CVM+
+-- 886-888: REC
+-- 892-894: SAP
+-- 895-897: SCD
+-- 898-900: SGA
+-- 901-908: Almoxarifado
+-- 909-940: SGD
+-- 941-943: SMA
+-- 945-946: SRA
+-- 947-966, 1414-1416: SRH
+-- 987-1001: BI-SEP
+-- 1002-1016, 1417-1432: BI-FDO
+-- 1017-1031: BI-ASA
+-- 1032-1046: BI-INQ
+-- 1047-1058: DIVDAT Multa
+-- 1059-1070: DIVDAT Taxa
+-- 1071-1073: DPA
+-- 1074-1076: INFOCONV WEB
+-- 1077-1079: INQ
+-- 1088-1115: SAM
+-- 1116-1117: SCA
+-- 1118-1120: SCRED
+-- 1121-1136: SEI
+-- 1137-1139: SEM
+-- 1140-1142: SFI
+-- 1143-1145: SGF
+-- 1146-1148: SIC
+-- 1149-1151: SRD
+-- 1152-1154: SRE
+-- 1155-1157: TPC
+-- 1179-1181: CAP
+-- 1320, 1306-1309, 1313-1321: STA-WEBSVC
+-- 1182-1257, 1433-1438: CVMWEB
+-- 1258-1260: CVMWIN
+-- 1261-1263: DIVEXT
+-- 1264-1266: DOWNLOAD-MULT
+-- 1267-1269: Empresas.NET
+-- 1270-1272: Fundos.NET
+-- 1273-1275: IPE
+-- 1276-1278: SAC
+-- 1279-1281: SAD
+-- 1282-1293: SCMUL
+-- 1293-1296: SCTAX
+-- 1297-1299: SER
+-- 1300-1302: SIE
+-- 1303-1305, 1576: SIE-WEB
+-- 1322-1329: WEBSVC
+-- 1338-1339: JENKINS
+-- 1340-1342: Job Scheduler
+-- 1343-1344: OTRS
+-- 1345: Portal-Wiki
+-- 1347-1348: REDMINE
+-- 1349-1350: SVN
+-- 1351-1352: WILDFLY
+-- 1360-1362: APP Mobile Educa
+-- 1354,1363-1366: Dados Abertos
+-- 1367-1370: Intranet
+-- 1371-1378: OPENCMS
+-- 1379-1382: Portal CVM
+-- 1383-1386: Portal Investidor
+-- 1387-1398: Portal Relatórios
+-- 1405-1407: Patrimônio
+-- 1408-1413: SGD
+-- 1442-1443: SSI
+-- 1446-1447: SAR
+-- 1451-1454, 1475-1502: PIER
+-- 1456-1460: OLINDA
+-- 1464-1474: Crowdfunding
+-- 1576: Novo Cadastro
+-- -1: Sistema não Informado
+
+
+-- Almoxarifado
+update public.st_tickets 
+   set nm_sistema = 'Almoxarifado'
+ where service_id between 664 and 666
+    or service_id between 901 and 908;
+
+-- Dados
+update public.st_tickets 
+   set nm_sistema = 'Dados'
+ where service_id in (760, 779, 780, 1310);
+
+-- Banco de Dados
+update public.st_tickets 
+   set nm_sistema = 'Banco de Dados'
+ where service_id in (761);
+
+-- Comunicação Eletrônica
+update public.st_tickets 
+   set nm_sistema = 'Comunicação Eletrônica'
+ where service_id = 763
+    or service_id between 795 and 799;
+
+-- Sistema Operacional
+update public.st_tickets 
+   set nm_sistema = 'Sistema Operacional'
+ where service_id = 764
+    or service_id between 800 and 803;
+
+-- Pastas e Arquivos
+update public.st_tickets 
+   set nm_sistema = 'Pastas e Arquivos'
+ where service_id = 765;
+
+-- Servidor
+update public.st_tickets 
+   set nm_sistema = 'Servidor'
+ where service_id = 766;
+
+-- Equipamento
+update public.st_tickets 
+   set nm_sistema = 'Equipamento'
+ where service_id = 767;
+
+-- Impressao e Digitalizacao
+update public.st_tickets 
+   set nm_sistema = 'Impressao e Digitalização'
+ where service_id = 768
+    or service_id between 821 and 825;
+
+-- Celular
+update public.st_tickets 
+   set nm_sistema = 'Celular'
+ where service_id in (769,826);
+
+-- Videoconferência
+update public.st_tickets 
+   set nm_sistema = 'Videoconferência'
+ where service_id in (770,827);
+
+-- Rede
+update public.st_tickets 
+   set nm_sistema = 'Rede'
+ where service_id in (771) 
+    or service_id between 828 and 831;
+
+-- Certificado Digital
+update public.st_tickets 
+   set nm_sistema = 'Certificado Digital'
+ where service_id in (772);
+
+-- Segurança
+update public.st_tickets 
+   set nm_sistema = 'Segurança'
+ where service_id in (773);
+
+-- Banco de Dados
+update public.st_tickets 
+   set nm_sistema = 'Banco de Dados'  
+ where service_id between 781 and 788;
+
+-- Software
+update public.st_tickets 
+   set nm_sistema = 'Software'  
+ where service_id between 789 and 792
+    or service_id = 762;
+
+-- Coreio Eletrônico
+update public.st_tickets 
+set nm_sistema = 'Correio Eletrônico'
+where service_id = 794;
+
+-- Pasta e Arquivos
+update public.st_tickets 
+   set nm_sistema = 'Pasta e Arquivos'  
+ where service_id between 804 and 807;
+
+-- Servidor
+update public.st_tickets 
+   set nm_sistema = 'Servidor'  
+ where service_id between 808 and 813;
+
+-- Equipamento
+update public.st_tickets 
+   set nm_sistema = 'Equipamento'  
+ where service_id between 814 and 820;
+
+-- Certificado Digital
+update public.st_tickets 
+   set nm_sistema = 'Certificado Digital'  
+ where service_id between 832 and 834;
+
+-- Segurança
+update public.st_tickets 
+   set nm_sistema = 'Segurança'  
+ where service_id between 835 and 837;
+
+-- Acesso
+update public.st_tickets 
+set nm_sistema = 'Acesso'
+where service_id = 840;
+
+-- CVM+
+update public.st_tickets 
+   set nm_sistema = 'CVM+'  
+ where service_id between 858 and 884;
+
+-- REC
+update public.st_tickets 
+   set nm_sistema = 'REC'  
+ where service_id between 886 and 888;
+
+-- SAP
+update public.st_tickets 
+   set nm_sistema = 'SAP'  
+ where service_id between 892 and 894;
+
+-- SCD
+update public.st_tickets 
+   set nm_sistema = 'SCD'  
+ where service_id between 895 and 897;
+
+-- SGA
+update public.st_tickets 
+   set nm_sistema = 'SGA'  
+ where service_id between 898 and 900;
+
+-- SGD
+update public.st_tickets 
+   set nm_sistema = 'SGD'  
+ where service_id between 909 and 940;
+
+-- SMA
+update public.st_tickets 
+   set nm_sistema = 'SMA'  
+ where service_id between 941 and 943;
+
+-- SRA
+update public.st_tickets 
+   set nm_sistema = 'SRA'  
+ where service_id between 945 and 946;
+
+-- SRH
+update public.st_tickets 
+   set nm_sistema = 'SRH'  
+ where service_id between 947 and 966
+    or service_id between 1414 and 1416;
+
+-- BI-SEP
+update public.st_tickets 
+   set nm_sistema = 'BI-SEP'  
+ where service_id between 987 and 1001;
+
+-- BI-FDO
+update public.st_tickets 
+   set nm_sistema = 'BI-FDO'  
+ where service_id between 1002 and 1016
+    or service_id between 1417 and 1432;
+
+-- BI-ASA
+update public.st_tickets 
+   set nm_sistema = 'BI-ASA'  
+ where service_id between 1017 and 1031;
+
+-- BI-INQ
+update public.st_tickets 
+   set nm_sistema = 'BI-INQ'  
+ where service_id between 1032 and 1046;
+
+-- DIVDAT Multa
+update public.st_tickets 
+   set nm_sistema = 'DIVDAT Multa'  
+ where service_id between 1047 and 1058;
+
+-- DIVDAT Taxa
+update public.st_tickets 
+   set nm_sistema = 'DIVDAT Taxa'  
+ where service_id between 1059 and 1070;
+
+-- DPA
+update public.st_tickets 
+   set nm_sistema = 'DPA'  
+ where service_id between 1071 and 1073;
+
+-- INFOCONV WEB
+update public.st_tickets 
+   set nm_sistema = 'INFOCONV WEB'  
+ where service_id between 1074 and 1076;
+
+-- INQ
+update public.st_tickets 
+   set nm_sistema = 'INQ'  
+ where service_id between 1077 and 1079;
+
+-- SAM
+update public.st_tickets 
+   set nm_sistema = 'SAM'  
+ where service_id between 1088 and 1115;
+
+-- SCA
+update public.st_tickets 
+   set nm_sistema = 'SCA'  
+ where service_id between 1116 and 1117;
+
+-- SCRED
+update public.st_tickets 
+   set nm_sistema = 'SCRED'  
+ where service_id between 1118 and 1120;
+
+-- SEI
+update public.st_tickets 
+   set nm_sistema = 'SEI'  
+ where service_id between 1121 and 1136;
+
+-- SEM
+update public.st_tickets 
+   set nm_sistema = 'SEM'  
+ where service_id between 1137 and 1139;
+
+-- SFI
+update public.st_tickets 
+   set nm_sistema = 'SFI'  
+ where service_id between 1140 and 1142;
+
+-- SGF
+update public.st_tickets 
+   set nm_sistema = 'SGF'  
+ where service_id between 1143 and 1145;
+
+-- SIC
+update public.st_tickets 
+   set nm_sistema = 'SIC'  
+ where service_id between 1146 and 1148;
+
+-- SRD
+update public.st_tickets 
+   set nm_sistema = 'SRD'  
+ where service_id between 1149 and 1151;
+
+-- SRE
+update public.st_tickets 
+   set nm_sistema = 'SRE'  
+ where service_id between 1152 and 1154;
+
+-- TPC
+update public.st_tickets 
+   set nm_sistema = 'TPC'  
+ where service_id between 1155 and 1157;
+
+-- CAP
+update public.st_tickets 
+   set nm_sistema = 'CAP'  
+ where service_id between 1179 and 1181;
+
+-- STA-WEBSVC
+update public.st_tickets 
+   set nm_sistema = 'STA-WEBSVC'
+ where service_id = 1320 
+    or service_id between 1306 and 1309
+    or service_id between 1313 and 1321;
+
+-- CVMWEB
+update public.st_tickets 
+   set nm_sistema = 'CVMWEB'  
+ where service_id between 1182 and 1257
+    or service_id between 1433 and 1438;
+
+-- CVMWIN
+update public.st_tickets 
+   set nm_sistema = 'CVMWIN'  
+ where service_id between 1258 and 1260;
+
+-- DIVEXT
+update public.st_tickets 
+   set nm_sistema = 'DIXEXT'  
+ where service_id between 1261 and 1263;
+
+-- DOWNLOAD-MULT
+update public.st_tickets 
+   set nm_sistema = 'DOWNLOAD-MULT'  
+ where service_id between 1264 and 1266;
+
+-- Empresas.NET
+update public.st_tickets 
+   set nm_sistema = 'Empresas.NET'  
+ where service_id between 1267 and 1269;
+
+-- Fundos.NET
+update public.st_tickets 
+   set nm_sistema = 'Fundos.NET'  
+ where service_id between 1270 and 1272;
+
+-- IPE
+update public.st_tickets 
+   set nm_sistema = 'IPE'  
+ where service_id between 1273 and 1275;
+
+-- SAC
+update public.st_tickets 
+   set nm_sistema = 'SAC'  
+ where service_id between 1276 and 1278;
+
+-- SAD
+update public.st_tickets 
+   set nm_sistema = 'SAD'  
+ where service_id between 1279 and 1281;
+
+-- SCMUL
+update public.st_tickets 
+   set nm_sistema = 'SCMUL'  
+ where service_id between 1282 and 1293;
+
+-- SCTAX
+update public.st_tickets 
+   set nm_sistema = 'SCTAX'  
+ where service_id between 1294 and 1296;
+
+-- SER
+update public.st_tickets 
+   set nm_sistema = 'SER'  
+ where service_id between 1297 and 1299;
+
+-- SIE
+update public.st_tickets 
+   set nm_sistema = 'SIE'  
+ where service_id between 1300 and 1302;
+
+-- SIE-WEB
+update public.st_tickets 
+   set nm_sistema = 'SIE-WEB'  
+ where service_id between 1303 and 1305
+    or service_id = 1601;
+
+-- WEBSVC
+update public.st_tickets 
+   set nm_sistema = 'WEBSVC'  
+ where service_id between 1322 and 1329;
+
+-- JENKINS
+update public.st_tickets 
+   set nm_sistema = 'JENKINS'  
+ where service_id between 1338 and 1339;
+
+-- Job Scheduler
+update public.st_tickets 
+   set nm_sistema = 'Job Scheduler'  
+ where service_id between 1340 and 1342;
+
+-- OTRS
+update public.st_tickets 
+   set nm_sistema = 'OTRS'  
+ where service_id between 1343 and 1344;
+
+-- Portal-Wiki
+update public.st_tickets 
+   set nm_sistema = 'Portal-Wiki'
+ where service_id = 1345;
+
+-- REDMINE
+update public.st_tickets 
+   set nm_sistema = 'REDMINE'
+ where service_id between 1347 and 1348;
+
+-- SVN
+update public.st_tickets 
+   set nm_sistema = 'SVN'
+ where service_id between 1349 and 1350;
+
+-- WILDFLY
+update public.st_tickets 
+   set nm_sistema = 'WILDFLY'
+ where service_id between 1351 and 1352;
+
+-- APP Mobile Educa
+update public.st_tickets 
+   set nm_sistema = 'APP Mobile Educa'
+ where service_id between 1360 and 1362;
+
+-- Dados Abertos
+update public.st_tickets 
+   set nm_sistema = 'Dados Abertos'
+ where service_id between 1363 and 1366
+   or service_id = 1354;
+
+-- Intranet
+update public.st_tickets 
+   set nm_sistema = 'Intranet'
+ where service_id between 1367 and 1370;
+
+-- OPENCMS
+update public.st_tickets 
+   set nm_sistema = 'OPENCMS'
+ where service_id between 1371 and 1378;
+
+-- Portal CVM
+update public.st_tickets 
+   set nm_sistema = 'Portal CVM'
+ where service_id between 1379 and 1382;
+
+-- Portal Investidor
+update public.st_tickets 
+   set nm_sistema = 'Portal Investidor'
+ where service_id between 1383 and 1386;
+
+-- Portal Relatórios
+update public.st_tickets 
+   set nm_sistema = 'Portal Relatórios'
+ where service_id between 1387 and 1398;
+
+-- Patrimônio
+update public.st_tickets 
+   set nm_sistema = 'Patrimônio'
+ where service_id between 1405 and 1407;
+
+-- SGD
+update public.st_tickets 
+   set nm_sistema = 'SGD'  
+ where service_id between 909 and 940
+    or service_id between 1408 and 1413;
+
+-- SSI
+update public.st_tickets 
+   set nm_sistema = 'SSI'
+ where service_id between 1442 and 1443;
+
+-- SAR
+update public.st_tickets 
+   set nm_sistema = 'SAR'
+ where service_id between 1446 and 1447;
+
+-- PIER
+update public.st_tickets 
+   set nm_sistema = 'PIER'  
+ where service_id between 1451 and 1454
+    or service_id between 1475 and 1502;
+
+-- OLINDA
+update public.st_tickets 
+   set nm_sistema = 'OLINDA'
+ where service_id between 1456 and 1460;
+
+-- Crowdfunding
+update public.st_tickets 
+   set nm_sistema = 'Crowdfunding'
+ where service_id between 1464 and 1474;
+
+-- Novo Cadastro
+update public.st_tickets 
+   set nm_sistema = 'Novo Cadastro'
+ where service_id = 1576;
+
+-- Sistema não Informado
+update public.st_tickets 
+   set nm_sistema = 'Sistema não Informado'
+ where service_id = -1;</sql>
+    <set_params>N</set_params>
+    <insert_field />
+    <update_field />
+    <delete_field />
+    <read_field />
+    <arguments>
+      <argument>
+        <name>id</name>
+      </argument>
+      <argument>
+        <name>tn</name>
+      </argument>
+      <argument>
+        <name>title</name>
+      </argument>
+      <argument>
+        <name>queue_id</name>
+      </argument>
+      <argument>
+        <name>type_id</name>
+      </argument>
+      <argument>
+        <name>service_id</name>
+      </argument>
+      <argument>
+        <name>user_id</name>
+      </argument>
+      <argument>
+        <name>ticket_priority_id</name>
+      </argument>
+      <argument>
+        <name>ticket_state_id</name>
+      </argument>
+      <argument>
+        <name>create_time</name>
+      </argument>
+      <argument>
+        <name>create_by</name>
+      </argument>
+      <argument>
+        <name>change_time</name>
+      </argument>
+      <argument>
+        <name>change_by</name>
+      </argument>
+    </arguments>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Atualiza Ticket sem Atendente</name>
+    <type>ExecSQL</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PostgreSQL</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>-- Atualiza Ticket sem Atendente
+
+update st_tickets 
+   set nm_atendente_ticket = 'Atendente não informado'
+ where nm_atendente_ticket is null</sql>
+    <set_params>N</set_params>
+    <insert_field />
+    <update_field />
+    <delete_field />
+    <read_field />
+    <arguments>
+      <argument>
+        <name>id</name>
+      </argument>
+      <argument>
+        <name>tn</name>
+      </argument>
+      <argument>
+        <name>title</name>
+      </argument>
+      <argument>
+        <name>queue_id</name>
+      </argument>
+      <argument>
+        <name>type_id</name>
+      </argument>
+      <argument>
+        <name>service_id</name>
+      </argument>
+      <argument>
+        <name>user_id</name>
+      </argument>
+      <argument>
+        <name>ticket_priority_id</name>
+      </argument>
+      <argument>
+        <name>ticket_state_id</name>
+      </argument>
+      <argument>
+        <name>create_time</name>
+      </argument>
+      <argument>
+        <name>create_by</name>
+      </argument>
+      <argument>
+        <name>change_time</name>
+      </argument>
+      <argument>
+        <name>change_by</name>
+      </argument>
+    </arguments>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>368</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Anonimiza Atendente</name>
+    <type>ExecSQL</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>PostgreSQL</connection>
+    <execute_each_row>N</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>N</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>-- Não estou utilizando o nome do atendente por causa do sigilo dos dados
+
+update st_tickets 
+set nm_atendente_ticket = 'Atendente - ' || nm_atendente_ticket</sql>
+    <set_params>N</set_params>
+    <insert_field />
+    <update_field />
+    <delete_field />
+    <read_field />
+    <arguments>
+      <argument>
+        <name>id</name>
+      </argument>
+      <argument>
+        <name>tn</name>
+      </argument>
+      <argument>
+        <name>title</name>
+      </argument>
+      <argument>
+        <name>queue_id</name>
+      </argument>
+      <argument>
+        <name>type_id</name>
+      </argument>
+      <argument>
+        <name>service_id</name>
+      </argument>
+      <argument>
+        <name>user_id</name>
+      </argument>
+      <argument>
+        <name>ticket_priority_id</name>
+      </argument>
+      <argument>
+        <name>ticket_state_id</name>
+      </argument>
+      <argument>
+        <name>create_time</name>
+      </argument>
+      <argument>
+        <name>create_by</name>
+      </argument>
+      <argument>
+        <name>change_time</name>
+      </argument>
+      <argument>
+        <name>change_by</name>
+      </argument>
+    </arguments>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>592</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

@@ -40,6 +40,7 @@ Estrutura dos arquivos:
 - Relatório: Arquivo PDF contendo a descrição do projeto
 - SQL Power Architect: Modelo multidimensional
 - Scripts SQL: Scripts para criação das tabelas do banco de dados.
+- BD: Backup do Banco de Dados PostgreSQL
 
 ---
 
